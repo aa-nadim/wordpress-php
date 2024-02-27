@@ -1,0 +1,1 @@
+<h2><?php esc_attr_e('Nothing found', 'bootstrap') ?></h2>
