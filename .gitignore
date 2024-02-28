@@ -3,7 +3,7 @@ wp-admin
 
 wp-content/plugins
 wp-content/uploads
-wp-content/index.php
+#wp-content/index.php
 
 wp-includes
 

@@ -3,7 +3,8 @@
 ========================================*/
 body {
  font-family: "Kaisei Decol", serif;
- /* background: red; */
+ font-size: 15px;
+ line-height: 1.5em;
 }
 h1,
 h2,
@@ -36,9 +37,15 @@ Header Area Style
  display: inline-block;
  position: relative;
 }
+#header_area .col-md-9 ul li a span {
+ font-family: "Kaisei Decol", serif;
+ display: block;
+ font-size: 13px;
+}
 #header_area .col-md-9 ul li a {
  color: #262626;
  padding: 20px 10px;
+ font-size: 16px;
  display: block;
  text-transform: uppercase;
  text-decoration: none;
@@ -57,6 +64,7 @@ Header Area Style
  text-align: left;
  top: 62px;
  width: 200px;
+ z-index: 99999;
 }
 #header_area .col-md-9 ul li:hover ul {
  left: 0px;
@@ -104,4 +112,32 @@ Header Area Style
 #header_area .col-md-9 ul ul li ul li a:hover {
  background: #ea1a70;
  color: #fff;
+}
+
+/*===========================================
+ Menu Position
+===========================================*/
+#header_area.left_menu .col-md-3 {
+ order: 2;
+}
+#header_area.left_menu .col-md-9 {
+ order: 1;
+}
+#header_area.left_menu .col-md-9 ul {
+ text-align: left;
+}
+
+#header_area.center_menu .col-md-3 {
+ width: 100%;
+ text-align: center;
+ margin-bottom: 10px;
+}
+#header_area.center_menu .col-md-9 {
+ width: 100%;
+}
+#header_area.center_menu .col-md-9 ul {
+ text-align: center;
+}
+#header_area.center_menu .col-md-9 ul ul {
+ text-align: left;
 }
